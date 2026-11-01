@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Grand Stay Hotel - Book Now</title>
+    <link rel="stylesheet" href="css/style2.css">
+</head>
+<body>
+    <div class="form-container">
+        <h2>Reserve Your Stay</h2>
+        <!-- Form action maps directly to our Servlet URL pattern -->
+        <form action="bookRoom" method="POST">
+            <label>Full Name:</label>
+            <input type="text" name="guestName" required>
+
+            <label>Email Address:</label>
+            <input type="email" name="guestEmail" required>
+
+            <label>Check-in Date:</label>
+            <input type="date" name="checkInDate" required>
+
+            <label>Select Room ID:</label>
+            <select name="roomId" required>
+                <option value="1">Room 101 - Deluxe Single (₹1500)</option>
+                <option value="2">Room 102 - Executive Suite (₹3500)</option>
+                <option value="3">Room 201 - Luxury King (₹5000)</option>
+            </select>
+
+            <button type="submit">Confirm Reservation</button>
+        </form>
+    </div>
+</body>
+</html>
